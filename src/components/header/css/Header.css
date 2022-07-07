@@ -1,0 +1,172 @@
+.header {
+  background-color: #003580;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.header .headerContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto 100px;
+  color: white;
+}
+
+.header .headerContainer.listMode {
+  margin: 20px auto 0;
+}
+
+.header .headerContainer .headerList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.header .headerContainer .headerList .headerListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  color: white;
+  padding: 10px;
+  border: 1px solid #003580;
+  border-radius: 20px;
+}
+
+.header .headerContainer .headerList .headerListItem svg {
+  margin-right: 7px;
+}
+
+.header .headerContainer .headerList .headerListItem.active {
+  border: 1px solid white;
+}
+
+.header .headerContainer .headerDescription {
+  margin: 20px 0;
+}
+
+.header .headerContainer .headerButton {
+  background-color: #005999;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.header .headerContainer .headerSearch {
+  height: 30px;
+  background-color: white;
+  border: 3px solid #ffff09;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -23px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header .headerContainer .headerSearch .headerSearchItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.header .headerContainer .headerSearch .headerSearchItem .headerIcon {
+  color: lightgrey;
+  margin-left: 8px;
+}
+
+.header .headerContainer .headerSearch .headerSearchItem input {
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+
+.header .headerContainer .headerSearch .headerSearchItem .headerSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.header .headerContainer .headerSearch .headerSearchItem .headerDateRange {
+  position: absolute;
+  top: 43px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 2;
+}
+
+.header .headerContainer .headerSearch .options {
+  position: absolute;
+  top: 43px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 2;
+}
+
+.header .headerContainer .headerSearch .options .optionItem {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+}
+
+.header .headerContainer .headerSearch .options .optionItem .optionsItemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: black;
+}
+
+.header .headerContainer .headerSearch .options .optionItem .optionsItemsContainer .optionCounterButton {
+  width: 30px;
+  height: 30px;
+  color: #005999;
+  border: 1px solid #005999;
+  cursor: pointer;
+  background-color: white;
+}
+
+.header .headerContainer .headerSearch .options .optionItem .optionsItemsContainer .optionCounterButton:hover {
+  background-color: #e0e0e0;
+}
+
+.header .headerContainer .headerSearch .options .optionItem .optionsItemsContainer .optionCounterButton:disabled {
+  cursor: not-allowed;
+  background-color: white;
+}
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,65 @@
+.featured {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .featuredItem {
+        position: relative;
+        color: white;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+
+            h2 {
+                text-decoration: underline;
+            }
+
+            .featuredItemImg {
+                transform: scale(0.985);
+            }
+        }
+
+
+
+
+        .featuredItemImg {
+            width: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 0px;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        .featuredItemtitles {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+
+        }
+
+    }
+
+}
+
+.infoArea {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1em;
+    text-align: justify;
+
+
+    .infoAreaTitle {
+        margin-bottom: 20px;
+    }
+}
