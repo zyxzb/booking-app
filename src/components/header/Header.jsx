@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faBed,
@@ -19,6 +20,7 @@ import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 
 const Header = ({type}) => {
+    const [destination, setDestination]= useState('')
     const [openDate,
         setOpenDate] = useState(false);
     const [date,
@@ -29,6 +31,9 @@ const Header = ({type}) => {
             key: 'selection'
         }
     ]);
+
+    const navigate = useNavigate()
+
     const [openOptions,
         setOpenOptions] = useState(false);
     const [options,
@@ -46,6 +51,10 @@ const Header = ({type}) => {
         // if (options[name] === 0 && operation === 'd') {     return options[name] += 1
         // }
     }
+
+    const handleSearch = () => {
+        navigate('/hotels', {state: {destination, date, options}})
+    } 
 
     return (
         <header className='header'>
@@ -87,7 +96,9 @@ const Header = ({type}) => {
                         <input
                             className='headerSearchInput'
                             type="text"
-                            placeholder=' Dokąd się wybierasz?'/>
+                            placeholder=' Dokąd się wybierasz?'
+                            onChange={(e) => setDestination(e.target.value)}
+                            />
                     </div>
                     <div className="headerSearchItem">
                         <FontAwesomeIcon
@@ -163,7 +174,7 @@ const Header = ({type}) => {
                         )}
                     </div>
                     <div className="headerSearchItem">
-                        <button className='headerButton'>Szukaj</button>
+                        <button className='headerButton' onClick={handleSearch}>Szukaj</button>
                     </div>
                 </div>
             </>}

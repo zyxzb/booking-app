@@ -16,6 +16,7 @@
 }
 
 .form .formContainer {
+  width: 100%;
   max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,5 +31,96 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.form .formContainer h3 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+@media (max-width: 400px) {
+  .form .formContainer h3 {
+    font-size: 1.5em;
+  }
+}
+
+.form .formContainer .flexFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px;
+}
+
+@media (max-width: 768px) {
+  .form .formContainer .flexFormContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.form .formContainer .flexFormContainer .flexFormContainerItem {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .form .formContainer .flexFormContainer .flexFormContainerItem {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+.form .formContainer .flexFormContainer .flexFormContainerItem img {
+  width: 100%;
+  height: 100%;
+}
+
+.form .formContainer .flexFormContainer .flexFormContainerItem form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+}
+
+@media (max-width: 768px) {
+  .form .formContainer .flexFormContainer .flexFormContainerItem form {
+    margin-bottom: 40px;
+  }
+}
+
+.form .formContainer .flexFormContainer .flexFormContainerItem form input,
+.form .formContainer .flexFormContainer .flexFormContainerItem form textarea {
+  height: 40px;
+  width: 100%;
+  padding: 3px;
+  outline: none;
+  font-size: 1em;
+}
+
+.form .formContainer .flexFormContainer .flexFormContainerItem form input {
+  margin-bottom: 15px;
+}
+
+.form .formContainer .flexFormContainer .flexFormContainerItem form label {
+  margin-bottom: 3px;
+}
+
+.form .formContainer .flexFormContainer .flexFormContainerItem form textarea {
+  height: 100px;
+}
+
+.form .formContainer .flexFormContainer .flexFormContainerItem form .btn {
+  margin-top: 5px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Form.css.map */

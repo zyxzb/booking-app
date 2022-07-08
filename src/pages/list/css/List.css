@@ -1,0 +1,44 @@
+.listContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  height: 2000px;
+}
+
+.listContainer .listWrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.listContainer .listWrapper .listSearch {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #febb01;
+  padding: 10px;
+  border-radius: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  height: 400px;
+}
+
+.listContainer .listWrapper .listSearch .listSearchTitle {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.listContainer .listWrapper .listResult {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+/*# sourceMappingURL=List.css.map */

@@ -1,3 +1,48 @@
 .footer {
-    height: 50px;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 40px 0;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-gap: 0.5em;
+    }
+
+    @media (max-width: 1280px) {
+        padding: 40px;
+    }
+
+    .footerSection {
+
+        p {
+            opacity: 0.85;
+            margin-bottom: 0.8em;
+
+
+            a {
+                color: inherit;
+                text-decoration: none;
+
+                &:hover {
+                    color: #003580;
+                }
+            }
+
+            @media (max-width: 768px) {
+                font-size: 0.8em;
+            }
+        }
+
+        .title {
+            opacity: 1;
+            font-weight: bold;
+            margin-bottom: 1em;
+            font-size: 1.2em;
+        }
+    }
+
 }
