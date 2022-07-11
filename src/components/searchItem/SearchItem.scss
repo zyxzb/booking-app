@@ -1,0 +1,103 @@
+.searchItem {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+
+
+    .searchItemImg {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+
+    }
+
+    .searchItemDescription {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 2;
+
+        .searchItemDescriptionTitle {
+            font-size: 20px;
+            color: #005999;
+        }
+
+        .searchItemDescriptionDistance,
+        .searchItemDescriptionCancleSubtitle {
+            font-size: 0.9rem;
+        }
+
+        .searchItemDescriptionSubtitle {
+            font-weight: bold;
+        }
+
+        .searchItemDescriptionCancle {
+            color: white;
+            background-color: green;
+            width: max-content;
+            padding: 4px;
+            border-radius: 5px;
+        }
+
+    }
+
+    .searchItemDetails {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .searchItemDetalsRating {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                font-weight: 500;
+            }
+
+            button {
+                background-color: #005999;
+                color: white;
+                padding: 5px;
+                font-weight: bold;
+                border: none;
+                font-size: 1.1rem;
+            }
+        }
+
+        .searchItemDetailsTexts {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-align: right;
+
+            .searchItemDetailsTextsPrice {
+                font-size: 24px;
+            }
+
+            .searchItemDetailsTextsInfo {
+                font-size: 13px;
+                color: gray;
+            }
+
+            .searchItemDetailsButton {
+                background-color: #005999;
+                color: white;
+                padding: 10px 5px;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+        }
+    }
+}

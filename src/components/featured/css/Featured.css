@@ -20,6 +20,16 @@
   cursor: pointer;
 }
 
+.featured .featuredItem:nth-child(2) {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.featured .featuredItem:nth-child(3) {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 .featured .featuredItem:hover h2 {
   text-decoration: underline;
 }

@@ -8,7 +8,7 @@ const Featured = () => {
         <div>
             <div className='featured'>
                 <div className="featuredItem">
-                    <img
+                    <img 
                         className='featuredItemImg'
                         src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                         alt=""/>
@@ -24,7 +24,7 @@ const Featured = () => {
                         alt=""/>
                     <div className='featuredItemtitles'>
                         <h2>Poznań</h2>
-                        <p>2 mieszkania</p>
+                        <p>0 mieszkania</p>
                     </div>
                 </div>
                 <div className="featuredItem">
@@ -34,7 +34,7 @@ const Featured = () => {
                         alt=""/>
                     <div className='featuredItemtitles'>
                         <h2>Wrocław</h2>
-                        <p>4 mieszkania</p>
+                        <p>0 mieszkania</p>
                     </div>
                 </div>
             </div>

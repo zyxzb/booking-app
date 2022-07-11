@@ -6,6 +6,7 @@ import '../footer/css/Footer.css'
 const Footer = () => {
     return (
         <div className='footer'>
+            <div className="footwrWrapper">
                 <div className='footerSection'>
                     <p className='title'>Booking App</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut non debitis quae tempore repellendus quod nam natus adipisci sapiente.</p>
@@ -21,6 +22,7 @@ const Footer = () => {
                     <p><a href="">Apartamenty dwópokojowe</a></p>
                     <p><a href="">Apartamenty trzypokojowe</a></p>
                 </div>
+            </div>
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faBed,
@@ -12,7 +12,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import {DateRange} from 'react-date-range';
 import {format} from 'date-fns';
-// import bgImage from '../../images/1.jpg';
 
 //styles
 import './css/Header.css';
@@ -113,6 +112,7 @@ const Header = ({type}) => {
                             onChange={item => setDate([item.selection])}
                             moveRangeOnFirstSelection={false}
                             ranges={date}
+                            minDate={new Date()}
                             className='headerDateRange'/>}
                     </div>
                     <div className="headerSearchItem">

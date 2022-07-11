@@ -1,0 +1,134 @@
+.searchItem {
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.searchItem .searchItemImg {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.searchItem .searchItemDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.searchItem .searchItemDescription .searchItemDescriptionTitle {
+  font-size: 20px;
+  color: #005999;
+}
+
+.searchItem .searchItemDescription .searchItemDescriptionDistance,
+.searchItem .searchItemDescription .searchItemDescriptionCancleSubtitle {
+  font-size: 0.9rem;
+}
+
+.searchItem .searchItemDescription .searchItemDescriptionSubtitle {
+  font-weight: bold;
+}
+
+.searchItem .searchItemDescription .searchItemDescriptionCancle {
+  color: white;
+  background-color: green;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.searchItem .searchItemDetails {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.searchItem .searchItemDetails .searchItemDetalsRating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.searchItem .searchItemDetails .searchItemDetalsRating span {
+  font-weight: 500;
+}
+
+.searchItem .searchItemDetails .searchItemDetalsRating button {
+  background-color: #005999;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.searchItem .searchItemDetails .searchItemDetailsTexts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  text-align: right;
+}
+
+.searchItem .searchItemDetails .searchItemDetailsTexts .searchItemDetailsTextsPrice {
+  font-size: 24px;
+}
+
+.searchItem .searchItemDetails .searchItemDetailsTexts .searchItemDetailsTextsInfo {
+  font-size: 13px;
+  color: gray;
+}
+
+.searchItem .searchItemDetails .searchItemDetailsTexts .searchItemDetailsButton {
+  background-color: #005999;
+  color: white;
+  padding: 10px 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=SearchItem.css.map */
